@@ -3,7 +3,7 @@ const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 const config = require('./config');
 const app = express();
-const googleProfile = {};
+let googleProfile = {};
 
 app.set('view engine', 'pug');
 app.set('views', './views');
